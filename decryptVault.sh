@@ -36,7 +36,6 @@ if [ -f "$CONFIG_FILE" ]; then
 else
     # Prompt the user for details if no saved config exists
     read -p "Enter the full path for your vault directory: " LOCAL_DIR
-    read -p "Enter the full path to your AES key: " AES_KEY_PATH
 
     # Ask if the user wants to save these details for future use
     read -p "Would you like to save these details for future use? (y/n): " SAVE_CHOICE
