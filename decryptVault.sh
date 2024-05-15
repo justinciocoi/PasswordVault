@@ -47,7 +47,7 @@ else
 fi
 
 # Prompt the user to enter the file to be decrypted
-read -p "Enter the file name you wish to decrypt: " ENCRYPTED_FILE
+read -p "Enter the file name you wish to decrypt (include file extension (.txt)): " ENCRYPTED_FILE
 echo # move to a new line
 
 # Decrypt the password
