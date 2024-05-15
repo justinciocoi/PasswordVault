@@ -1,4 +1,6 @@
-##Justin Ciocoi 3/20/24
+#!/bin/bash
+
+#Justin Ciocoi 3/20/24
 #Tool to backup encrypted passwords to a remote machine
 
 # Check for a saved configuration file
