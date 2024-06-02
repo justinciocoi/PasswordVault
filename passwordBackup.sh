@@ -16,7 +16,7 @@ if [ -d "$KEY_FOLDER" ] && [ -f "$KEY_FOLDER/$AES_KEY_FILE" ]; then
     if [[ $USE_KEY =~ ^[Yy]$ ]]; then
         AES_KEY_PATH="$KEY_FOLDER/$AES_KEY_FILE"
     else
-        read -p "Use your own key? (no will generate a default key in the default directory) (y/n): " OWN_KEY
+        read -p "Use your own key? (no will generate a default key in the default directory and overwrite previous default key(s)) (y/n): " OWN_KEY
         if [[ $OWN_KEY =~ ^[Yy]$ ]]; then
             read -p "Enter path to your AES key: " AES_KEY_PATH
         else
