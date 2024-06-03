@@ -23,18 +23,25 @@ Host [HostName] #your HostName can be used in the future to access SSH
 
 The passwordBackup.sh script will backup a password to your remote server. This script will run on your client machine and transfer encrypted password information to the password server. First, clone the repository:
 
-```
+```bash
 git clone https://github.com/justinciocoi/passwordVault
 ```
 
 In order to make the script executable, use the following commands in your client terminal to navigate into the cloned repository and make the script executable:
 
-```
+```bash
 cd passwordVault
 chmod +x passwordBackup.sh
 ```
 
-which can then be executed using `./passwordBackup.sh` 
+which can then be executed using `./passwordBackup.sh`
+
+In order to make this script executable from any directory in your terminal, use the following command to add the project directory to your system's PATH
+
+```bash
+sudo echo "export PATH=/path/to/scrpts:$PATH" >> ~/.zshrc
+#change to bashrc if necessary
+```
 
 ## Decryption Set-Up
 
