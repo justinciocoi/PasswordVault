@@ -84,7 +84,7 @@ fi
 
 
 # Prompt the user to enter their own password
-read -p "Enter the password you wish to encrypt: " PASSWORD
+read -sp "Enter the password you wish to encrypt: " PASSWORD
 echo # move to a new line
 
 # Prompt for the output filename without the .txt extension
